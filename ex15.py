@@ -5,6 +5,7 @@ script, filename = argv
 txt = open(filename)
 
 print "Here's your file %r" % filename
+# prints contents of txt
 print txt.read()
 
 print "Type the filename again:"
