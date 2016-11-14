@@ -13,3 +13,8 @@ print tabby_cat
 print persian_cat
 print backslash_cat
 print fat_cat
+
+#litte practice snippet
+while True:
+    for i in ["/","-","|","\\","|"]:
+        print "%s\r" % i,
