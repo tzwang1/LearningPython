@@ -51,7 +51,14 @@ def select_character():
 def start(start_choice):
     if start_choice == "1":
         character, _hp, _atk, _def, _spd, _spe = select_character()
-        print character, _hp, _atk, _def, _spd, _spe
+        #print character, _hp, _atk, _def, _spd, _spe
+
+def save(character, _hp, _atk, _def, _spd, _spe, room):
+    data = [character, _hp, _atk, _def, _spd, _spe, room]
+    save = open(data.txt, 'w')
+    for i in data:
+        save.write(i)
+        save.write("\n")
 
 
 print "1. New Game"
